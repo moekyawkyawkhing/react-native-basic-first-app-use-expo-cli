@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, Button, Alert, Image, Platform, View } from 'react-native';
 import { useDeviceOrientation } from '@react-native-community/hooks'
+import WelcomeViewImage from './app/components/WelcomeViewImage';
 
 export default function App() {
   const orientation = useDeviceOrientation();
@@ -92,6 +93,9 @@ export default function App() {
         </View>
       */
     }
+    { /* start backgroundViewImage */ }
+      <WelcomeViewImage/>
+    { /* end backgroundViewImage */ }
     </SafeAreaView>
   );
 }
